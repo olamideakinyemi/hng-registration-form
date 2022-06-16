@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Registration form</title>
         <link rel="stylesheet" href="./style.css" />
+        <link rel="icon" type="image/x-icon" href="./img/favicon-32x32.png">
     </head>
     <body>
             <div class="container">
@@ -26,12 +27,30 @@
                         </div>
                         <div class="card">
                             <div class="inputs">
-                                <form action="/">
-                                    <input type="text" placeholder="First Name" />
-                                    <input type="text" placeholder="Last Name" />
-                                    <input type="email" placeholder="Email Address" />
-                                    <input type="password" placeholder="Password" />
-                                    <input class="submit" type="submit" value="CLAIM YOUR FREE TRIAL" />
+                                <form id="form">
+                                   <div class="form-control ">
+                                       <input type="text" placeholder="First Name" id="firstname"/>
+                                        <img class="image" src="./img/icon-error.svg" alt="icon-error">
+                                        <small>Error message</small>
+                                   </div>
+                                    <div class="form-control">
+                                        <input type="text" placeholder="Last Name" id="lastname"/>
+                                        <img class="image" src="./img/icon-error.svg" alt="error icon-error">
+                                        <small>Error message</small>
+                                    </div>
+                                   <div class="form-control ">
+                                    <label class="label2" for="email">email@example/com</label>
+                                    <label class="label1" for="email">Email Address</label>
+                                       <input type="email" class="erremail" id="email"/>
+                                       <img class="image" src="./img/icon-error.svg" alt="icon-error">
+                                       <small>Error message</small>
+                                   </div>
+                                    <div class="form-control">   
+                                        <input type="password" placeholder="Password" id="password"/>
+                                        <img class="image" src="./img/icon-error.svg" alt="icon-error">
+                                        <small>Error message</small>
+                                    </div>
+                                    <input class="submit" type="submit" value="CLAIM YOUR FREE TRIAL" onload="checkInputs();"/>
                                 </form>
                                 <p class="terms">
                                     By clicking the button you are agreeing to our
@@ -42,5 +61,6 @@
                 </main>
             </div>
         </div>
+        <script src="./script.js" />
     </body>
 </html>

@@ -69,9 +69,12 @@ input:focus{
     border: 1px solid #5e55a3;
 }
 
+
 .inputs{
     margin: 10px 50px;
 }
+
+
 
 button {
     width: 70%;
@@ -110,6 +113,65 @@ button {
 .trialdesc {
     font-weight: 700;
 }
+
+
+.form-control{
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.form-control img{
+    visibility: hidden;
+    position: absolute;
+    top: 43px;
+    right: 20px;
+}
+
+.form-control.error img.image{
+    visibility: visible;
+    }
+
+.form-control small{
+    visibility: hidden;
+    position: absolute;
+   bottom: 0;
+    right: 0;
+}
+
+.form-control.error input{
+    border-color: red;
+}
+
+.form-control.error small{
+    visibility: visible;
+    color: red;
+}
+
+.form-control label.label1{
+    font-size: 12px;
+    font-weight: 600;
+   color: gray;
+    position: absolute;
+    bottom: 39px;
+    left: 20px;
+}
+.form-control label.label2{
+    font-size: 12px;
+    font-weight: 600;
+    visibility: hidden;
+    position: absolute;
+    bottom: 39px;
+    left: 20px;
+}
+
+.form-control.error label.label2{
+   color: red;
+   visibility: visible;
+}
+.form-control.error label.label1{
+    visibility: hidden;
+ }
+
 
 @media only screen and (max-width: 900px) {
     body {
