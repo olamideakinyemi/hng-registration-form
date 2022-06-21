@@ -11,6 +11,8 @@ form.addEventListener('submit', (e) =>{
    checkInputs();
 });
 
+//../
+
 function checkInputs(){
     /*getting values from the input */
     const firstnameValue = firstname.value
@@ -30,7 +32,7 @@ function checkInputs(){
         setErrorFor(lastname, 'Last Name cannot be empty')
     }
     //conditional statement for email
-    if(isEmail != (emailValue)){
+    if(email == (emailValue)){
         setErrorFor(email, 'Looks like this is not an email');
     }
     //conditional statement for password
