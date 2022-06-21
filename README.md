@@ -1,2 +1,2 @@
 # hng-registration-form
-live url - https://registration-form-abhi.netlify.app/
+live url - https://olamideakinyemi.github.io/
